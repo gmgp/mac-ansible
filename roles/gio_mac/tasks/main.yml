@@ -1,0 +1,4 @@
+- name: Basic settings
+  import_tasks: basic_settings.yml
+
+
