@@ -1,4 +1,6 @@
 - name: Basic settings
   import_tasks: basic_settings.yml
 
+- name: Install brew things
+  import_tasks: homebrew_installs.yml
 

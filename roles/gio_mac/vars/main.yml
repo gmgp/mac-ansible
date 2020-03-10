@@ -2,9 +2,45 @@ homebrew_taps: []
 
 homebrew_package_removals: []
 
-homebrew_packages: []
+homebrew_packages:
+- ack 
+- bash-completion 
+- colordiff 
+- curl 
+- git 
+- less 
+- libffi
+- libyaml
+- moreutils 
+- multitail 
+- openssl
+- postgresql
+- rbenv
+- ssh-copy-id
+- the_silver_searcher 
+- tree 
+- vim 
+- watch 
+- wget 
+- z 
 
-homebrew_cask_packages: []
+homebrew_cask_packages: 
+- clipy
+- dash
+- docker
+- firefox
+- google-chrome
+- google-drive-file-stream
+- google-earth-pro
+- iterm2
+- keepassxc
+- libreoffice
+- meld
+- vagrant
+- virtualbox
+- virtualbox-extension-pack
+- visual-studio-code
+- vlc
 
 pyenv_python_versions: []
 
