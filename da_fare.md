@@ -98,6 +98,9 @@ If you need to have this software first in your PATH instead consider running:
 
 brew services start mysql@5.7
 
+gem install mysql2 -- --with-ldflags=-L/usr/local/opt/openssl/lib --with-cppflags=-I/usr/local/opt/openssl/include
+
+
 # bash
 
 https://clubmate.fi/upgrade-to-bash-4-in-mac-os-x/
@@ -112,7 +115,7 @@ sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells'
 
 https://medium.com/@jamesauble/install-nvm-on-mac-with-brew-adb921fb92cc
 
-brew install nvm
+    brew install nvm
 
 ==> Caveats
 Please note that upstream has asked us to make explicit managing
@@ -121,14 +124,14 @@ problems against the standard nvm install method prior to reporting.
 
 You should create NVM's working directory if it doesn't exist:
 
-  mkdir ~/.nvm
+    mkdir ~/.nvm
 
 Add the following to ~/.bash_profile or your desired shell
 configuration file:
 
-  export NVM_DIR="$HOME/.nvm"
-  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+    export NVM_DIR="$HOME/.nvm" 
+    [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+    [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 You can set $NVM_DIR to any location, but leaving it unchanged from
 /usr/local/opt/nvm will destroy any nvm-installed Node installations
@@ -141,9 +144,11 @@ Bash completion has been installed to:
 
 
 
-mkdir ~/.nvm
-nvm ls-remote
-nvm install 12
-nvm use 12
+    mkdir ~/.nvm
+    nvm ls-remote
+    nvm install 12
+    nvm use 12
 
-npm install -g yarn
+    npm install -g yarn
+
+

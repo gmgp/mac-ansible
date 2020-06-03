@@ -29,6 +29,7 @@ homebrew_cask_packages:
 - dash
 - docker
 - firefox
+- gitup
 - google-chrome
 - google-drive-file-stream
 - google-earth-pro
